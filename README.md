@@ -1,6 +1,28 @@
-## Example Summary
+## Project Summary
+Application that used 2 buttons to increase and decrease the temperature of an 
+external heating/cooling unit.The application displays the current time, temp 
+and set temerature to the uart. The application solves the problem of maintaining 
+a stable temperature for the heater. 
 
-Application that toggles an LED(s) using a GPIO pin interrupt.
+##What did you do particularly well?
+
+I beleive that I designed a good state machine that was able to transition from different states based
+on a time interval. In addition, I think that I did well documenting the application so that
+others can view and understand it. 
+
+##Where could you improve?
+I could have improve the logic of the button pressing. The state machine should have updated the setpoint
+based on the number of presses. The current state would just increment the temperature by 1 every time 
+the button was pressed.
+
+
+##What skills from this project will be particularly transferable to other projects and/or course work?
+State machines are the one skill I know i will be using in the future. I have a couple of 
+projects that would work great with a state machine aspect.
+
+##How did you make this project maintainable, readable, and adaptable?
+I abstracted most of the algorythms away from the main method so that future developers
+would be able to adjust the method in one place instead of multiple. In addition, I added code comments to document the setup methods, working methods, and the state machine states.
 
 ## Peripherals & Pin Assignments
 
